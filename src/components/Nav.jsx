@@ -34,7 +34,7 @@ const Nav = () => {
   return (
     <>
       <div className="flex md:w-3/4">
-        <div className="hidden w-full justify-between md:flex text-xl font-semibold">
+        <div className="hidden w-full justify-end md:flex text-xl font-semibold">
           <NavLinks />
         </div>
         <div className="md:hidden">

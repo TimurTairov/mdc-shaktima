@@ -5,7 +5,7 @@ import tg from '../images/icons/tg.png'
 
 const Footer = () => {
   return (
-    <footer className="footer-1 max-w-screen-xl mx-auto border-t mt-auto py-10 px-2 bg-gray-100">
+    <footer className="max-w-screen-xl mx-auto border-t mt-auto py-10 px-2 bg-gray-100">
       <div className="md:flex">
         <div className="w-full mb-5 md:w-2/5">
           <h6 className="dark:text-white font-semibold text-gray-700 mb-4">Московский Дхарма центр ШактиМа</h6>
