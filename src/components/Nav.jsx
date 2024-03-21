@@ -5,10 +5,21 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const NavLinks = () => {
   return (
     <>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/blog">Blog</NavLink>
-      <NavLink to="/aboutus">About</NavLink>
-      <NavLink to="/contacts">Contacts</NavLink>
+      <NavLink className="header-link" to="/">
+        На главную
+      </NavLink>
+      <NavLink className="header-link" to="/blog">
+        Блог
+      </NavLink>
+      <NavLink className="header-link" to="/aboutus">
+        О нас
+      </NavLink>
+      <NavLink className="header-link" to="/contacts">
+        Контакты
+      </NavLink>
+      <NavLink className="header-link" to="/donate">
+        Пожертвовать
+      </NavLink>
     </>
   )
 }
@@ -22,7 +33,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="flex w-1/3 justify-end">
+      <div className="flex md:w-3/4">
         <div className="hidden w-full justify-between md:flex text-xl font-semibold">
           <NavLinks />
         </div>
