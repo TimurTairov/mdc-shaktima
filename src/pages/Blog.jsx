@@ -4,7 +4,7 @@ import { allArcles } from '../Articles'
 
 const Blog = () => {
   return (
-    <div className="max-w-screen-xl mx-auto mt-4 h-screen">
+    <div className="max-w-screen-xl mx-auto mt-4">
       <h1 className="text-2xl ml-2">Блог</h1>
 
       {/* <card className="w-full flex border-2 rounded p-2 my-2">

@@ -6,11 +6,11 @@ const Article = ({ img, tittle, txt, url }) => {
     <div>
       <card className="w-full flex border-2 rounded p-2 my-2">
         <img
-          className="h-40 w-40 opacity-90 object-cover lg:mr-4 rounded"
+          className="h-20 w-20 lg:h-40 lg:w-40 opacity-90 object-cover mr-4 rounded"
           src={img}
           alt="img"
         />
-        <div className="flex flex-col w-full h-40">
+        <div className="flex flex-col w-full h-auto lg:h-40">
 
           <h3 className="dark:text-white  text-gray-700 font-semibold text-2xl">
             {tittle}
