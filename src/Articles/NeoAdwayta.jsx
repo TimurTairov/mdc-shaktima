@@ -3,8 +3,8 @@ import React from 'react'
 const NeoAdwayta = () => {
   return (
     <div className="max-w-screen-xl mx-auto mt-4">
-      <h3 className="dark:text-white  text-gray-700 font-bold text-2xl">Как не попасть в ловушку поверхностной Адвайты</h3>
-      <div className="dark:text-slate-400 text-gray-700">
+      <h3 className="dark:text-white  text-gray-700 font-bold text-2xl mx-2">Как не попасть в ловушку поверхностной Адвайты</h3>
+      <div className="dark:text-slate-400 text-gray-700 mx-2">
         <p>О двенадцати видах поверхностного отношения, подстерегающих практиков недвойственных учений.</p>
         <p>
           Адвайта — это мощнейшее мировоззрение, я бы сказал, это самое мощное мировоззрение, которое может быть вообще во вселенной для человека или любого

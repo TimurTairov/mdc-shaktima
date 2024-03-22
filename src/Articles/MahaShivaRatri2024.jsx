@@ -6,8 +6,8 @@ const slider = ['https://i.ibb.co/ncrXc2V/1.png', 'https://i.ibb.co/B3s7v4h/2.pn
 const MahaShivaRatri2024 = () => {
   return (
     <div className="max-w-screen-xl mx-auto mt-4">
-      <h3 className="dark:text-white  text-gray-700 font-bold text-2xl ml-2">Махашиваратри 2024</h3>
-      <div className="dark:text-slate-400 text-gray-700 ml-2">
+      <h3 className="dark:text-white  text-gray-700 font-bold text-2xl mx-2">Махашиваратри 2024</h3>
+      <div className="dark:text-slate-400 text-gray-700 mx-2">
         <p>Махашиваратри в этом году удался на славу Махадэву в прекрасном зале "Энергия Баланса".</p>
         <p>
           У нас было четыре пуджи, динамическая медитация, танцы, йога, чай, ханг, общение и прасад. На праздник пришло около 50 практикующих, многие из которых
