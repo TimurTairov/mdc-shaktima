@@ -1,15 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import mahashivaratri from '../images/mahashivaratri.jpg'
+import mahalakshmiJayanti from '../images/Mahalakshmi jayanti 25032024.jpg'
 import { news } from '../data/News'
-
 import logo from '../images/ShaktiMa-logo.jpg'
 import Column from '../components/Column'
 
 const Home = () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto mt-4">
+      <div className="max-w-screen-xl mx-auto mt-4 h-screen">
         {/* banners */}
         <section className="px-2 lg:flex lg:space-x-2">
           <NavLink
@@ -34,7 +34,34 @@ const Home = () => {
           {/* post cards  */}
           <div className="min-[320px]:px-2 lg:px-0 w-full lg:w-2/3 lg:space-x-2">
             <h5 className="dark:text-white font-bold text-lg uppercase text-gray-700 mt-1 lg:ml-2">Новости Московской сангхи</h5>
-            <iframe
+
+            <div className="block w-full lg:flex lg:mb-10 mt-4">
+              <img src={mahalakshmiJayanti} alt="Mahalakshmi Jayanti" className="h-40 w-40 opacity-90 object-cover lg:mr-4 p-0 rounded" />
+
+              <div className="flex flex-col w-full h-40">
+                <h3 className="dark:text-white  text-gray-700 font-bold text-2xl">Махалакшми Джаянти | Аяпа Джаянти | Холи</h3>
+                <p className="dark:text-slate-400 text-gray-700">
+                  Намасте, Драгоценные 🙏
+                  <br />
+                  В ближайший понедельник 25 марта нас ждет тройной праздник!
+                  <br />
+                  МАХАЛАКШМИ ДЖАЯНТИ, АЙЯПА ДЖАЯНТИ, ХОЛИ
+                  <br />
+                  Некоторое время в феврале назад мы почтили Ма Сарасвати - ее день явления считается первым шагом весны
+                  <br />
+                  Теперь мы отмечаем расцвет Шакти, возрождение, полную Весну с приходом Лакшми Ма <br />
+                  Мы приглашаем вас <br />
+                  📍25 марта <br />
+                  📍18:00 <br />
+                  📍Центр «Вершина» (м Курская/Чистые пруды) <br />
+                  Приносите цветы, фрукты , дойнет и преданное сердце 🩷
+                  <br /> Так же приглаем матадж на служение по подготовке праздника - обращайтесь к Мадхувидье в вотсап 89859274240🙏 <br />
+                  Джей Ма💖
+                </p>
+              </div>
+            </div>
+
+            {/* <iframe
               src="https://www.youtube.com/embed/6Rb7frU3Org?si=PflcaHrJjItMiAwD"
               title="YouTube video player"
               frameBorder="0"
@@ -43,13 +70,14 @@ const Home = () => {
               allowFullScreen
               className="w-full h-[500px] max-[400px]:h-72 lg:ml-2 mt-2 lg:pr-4 "
             />
-            <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Видео с Махашиваратри 2024</h5>
+            <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Видео с Махашиваратри 2024</h5> */}
 
-            <section className="py-2 pr-2">
+            {/* <section className="py-2 pr-2">
               {news.map((post) => {
                 return <Column key={post.id} img={post.image} tittle={post.tittle} txt={post.description} />
               })}
             </section>
+             */}
           </div>
 
           {/* topics */}

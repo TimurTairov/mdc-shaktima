@@ -7,7 +7,7 @@ const Column = ({ img, tittle, txt }) => {
     <div div className="block w-full lg:flex lg:mb-10" >
 
       <img
-        className="h-40 w-40 opacity-90 object-cover lg:mr-4 p-0 rounded "
+        className="h-40 w-40 opacity-90 object-cover lg:mr-4 p-0 rounded"
         src={img}
         alt="img"
       />
