@@ -1,6 +1,7 @@
 import React from 'react'
 import youtube from '../images/icons/youtube.png'
 import tg from '../images/icons/tg.png'
+import adwaytaOrg from '../images/icons/icons8-site-96.png'
 
 const Contscts = () => {
   return (
@@ -8,7 +9,7 @@ const Contscts = () => {
       <div className="ml-2">
         <h1 className="text-2xl">Контакты для связи</h1>
         <p className="dark:text-slate-400 text-gray-700">Мадхувидья: +79859274240 </p>
-        <p className="dark:text-slate-400 text-gray-700">Дэванатха: +79055623388 </p>
+        {/* <p className="dark:text-slate-400 text-gray-700">Дэванатха: +79055623388 </p> */}
         <h1 className="text-xl">Наши ресурсы</h1>
         <ul>
           <li>
@@ -23,7 +24,12 @@ const Contscts = () => {
               Telegram канал
             </a>
           </li>
-          <li></li>
+          <li>
+            <a href="https://www.advayta.org/" className="text-gray-700 flex hover:text-indigo-700" target="_blank" rel="noreferrer">
+              <img src={adwaytaOrg} className="w-6 h-6 mr-2" alt="Adwayta.org" />
+              Официальный сайт нашей традиции
+            </a>
+          </li>
         </ul>
       </div>
     </div>
