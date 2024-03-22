@@ -9,7 +9,7 @@ import Column from '../components/Column'
 const Home = () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto mt-4 h-screen">
+      <div className="max-w-screen-xl mx-auto mt-4 lg:h-screen">
         {/* banners */}
         <section className="px-2 lg:flex lg:space-x-2">
           <NavLink
@@ -35,9 +35,8 @@ const Home = () => {
           <div className="min-[320px]:px-2 lg:px-0 w-full lg:w-2/3 lg:space-x-2">
             <h5 className="dark:text-white font-bold text-lg uppercase text-gray-700 mt-1 lg:ml-2">Новости Московской сангхи</h5>
 
-            <div className="block w-full lg:flex lg:mb-10 mt-4">
+            {/* <div className="block w-full lg:flex lg:mb-10 mt-4">
               <img src={mahalakshmiJayanti} alt="Mahalakshmi Jayanti" className="h-40 w-40 opacity-90 object-cover lg:mr-4 p-0 rounded" />
-
               <div className="flex flex-col w-full h-40">
                 <h3 className="dark:text-white  text-gray-700 font-bold text-2xl">Махалакшми Джаянти | Аяпа Джаянти | Холи</h3>
                 <p className="dark:text-slate-400 text-gray-700">
@@ -59,25 +58,24 @@ const Home = () => {
                   Джей Ма💖
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            {/* <iframe
+            <iframe
               src="https://www.youtube.com/embed/6Rb7frU3Org?si=PflcaHrJjItMiAwD"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              refErrerPolicy="strict-origin-when-cross-origin"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="w-full h-[500px] max-[400px]:h-72 lg:ml-2 mt-2 lg:pr-4 "
             />
-            <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Видео с Махашиваратри 2024</h5> */}
+            <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Видео с Махашиваратри 2024</h5>
 
-            {/* <section className="py-2 pr-2">
+            <section className="py-2 pr-2">
               {news.map((post) => {
                 return <Column key={post.id} img={post.image} tittle={post.tittle} txt={post.description} />
               })}
             </section>
-             */}
           </div>
 
           {/* topics */}
