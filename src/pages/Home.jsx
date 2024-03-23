@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import mahashivaratri from '../images/mahashivaratri.jpg'
-import mahalakshmiJayanti from '../images/Mahalakshmi jayanti 25032024.jpg'
 import { news } from '../data/News'
 import logo from '../images/ShaktiMa-logo.jpg'
 import Column from '../components/Column'
@@ -73,7 +72,9 @@ const Home = () => {
 
             <section className="py-2 pr-2">
               {news.map((post) => {
-                return <Column key={post.id} img={post.image} tittle={post.tittle} txt={post.description} />
+                if (post.id === '006') {
+                  return <Column key={post.id} img={post.image} tittle={post.tittle} txt={post.description} />
+                } else return <></>
               })}
             </section>
           </div>
