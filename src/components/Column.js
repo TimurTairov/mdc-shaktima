@@ -12,7 +12,7 @@ const Column = ({ img, tittle, txt }) => {
         alt="img"
       />
 
-      <div className="flex flex-col w-full h-40">
+      <div className="flex flex-col w-full h-auto">
 
         <h3 className="dark:text-white  text-gray-700 font-bold text-2xl">
           {tittle}

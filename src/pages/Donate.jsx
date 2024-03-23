@@ -3,7 +3,7 @@ import React from 'react'
 const Donate = () => {
   return (
     <div className="max-w-screen-xl mx-auto mt-4 h-screen">
-      <h1 className="text-2xl ml-2">Пожертвовать</h1>
+      <h1 className="text-2xl ml-2">Пожертвовать на развитие Дхарма центра</h1>
       <div className="ml-2">
         <h1 className="text-xl mt-2">Ю-Money</h1>
 

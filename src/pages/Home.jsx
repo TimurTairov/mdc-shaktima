@@ -9,7 +9,7 @@ import Column from '../components/Column'
 const Home = () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto mt-4 lg:h-screen">
+      <div className="max-w-screen-xl mx-auto mt-4">
         {/* banners */}
         <section className="px-2 lg:flex lg:space-x-2">
           <NavLink
