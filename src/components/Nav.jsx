@@ -6,7 +6,7 @@ const NavLinks = () => {
   return (
     <>
       <NavLink className="header-link" to="/">
-        На главную
+        Новости
       </NavLink>
       <NavLink className="header-link" to="/blog">
         Блог

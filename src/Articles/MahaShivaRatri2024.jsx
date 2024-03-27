@@ -17,7 +17,24 @@ const MahaShivaRatri2024 = () => {
         <p>Ом Намах Шивая</p>
         <p>Хара Хара Махадева</p>
       </div>
-      <MyCarousel className="mb-30" />
+
+      <div className="mt-20">
+        <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Видео с Махашиваратри</h5>
+        <iframe
+          src="https://www.youtube.com/embed/6Rb7frU3Org?si=PflcaHrJjItMiAwD"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="w-full h-[500px] max-[400px]:h-72 lg:ml-2 mt-2 lg:pr-4 "
+        />
+      </div>
+
+      <div className="mt-20">
+        <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Фото с Махашиваратри</h5>
+        <MyCarousel />
+      </div>
     </div>
   )
 }
