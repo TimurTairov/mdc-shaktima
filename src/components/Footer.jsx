@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="max-w-screen-xl mx-auto border-t mt-auto py-5  px-2 bg-gray-100">
       <div className="md:flex">
-        <div className="w-full mb-5 md:w-2/5">
+        <div className="w-full mb-5 md:w-2/5 lg:ml-20">
           <h6 className="dark:text-white font-semibold text-gray-700 mb-4">Московский Дхарма центр ШактиМа</h6>
           <ul>
             <li className="py-1 mr-1">На благо всех живых существ!</li>

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Column = ({ img, tittle, txt }) => {
+const Column = ({ img, tittle, txt, url }) => {
 
   return (
 
-    <div div className="block w-full lg:flex lg:mb-10" >
+    <div className="block w-full lg:flex mb-10" >
 
       <img
-        className="h-40 w-40 opacity-90 object-cover lg:mr-4 p-0 rounded"
+        className="h-40 w-auto lg:w-40 opacity-90 object-cover lg:mr-4 p-0 rounded"
         src={img}
         alt="img"
       />
@@ -19,6 +19,9 @@ const Column = ({ img, tittle, txt }) => {
         </h3>
         <p className="dark:text-slate-400 text-gray-700">
           {txt}
+        </p>
+        <p className="dark:text-slate-400 text-indigo-600 hover:underline">
+          {url ? <a href='https://telegra.ph/Priglashaem-na-tradicionnye-ritrity-v-SHri-Datta-ashram-03-27' >Ссылка на доп. материал</a> : ''}
         </p>
 
       </div>

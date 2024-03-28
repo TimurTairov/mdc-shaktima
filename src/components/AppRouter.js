@@ -10,6 +10,7 @@ import Blog from '../pages/Blog'
 import NeoAdwayta from '../Articles/NeoAdwayta'
 import MahaShivaRatri2024 from '../Articles/MahaShivaRatri2024'
 import Donate from '../pages/Donate'
+import Eventlist2024 from '../Articles/Eventlist2024'
 
 
 
@@ -25,6 +26,7 @@ const AppRouter = () => {
         <Route path='/blog' element={<Blog />} />
         <Route path='/neoadwayta' element={<NeoAdwayta />} />
         <Route path='/mahashivaratri2024' element={<MahaShivaRatri2024 />} />
+        <Route path='/eventlist2024' element={<Eventlist2024 />} />
         <Route path='/donate' element={<Donate />} />
       </Routes>
       <Footer />

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Article = ({ img, tittle, txt, url }) => {
   return (
     <div>
-      <card className="w-full flex border-2 rounded p-2 my-2">
+      <div className="w-full flex border-2 rounded p-2 my-2">
         <img
           className="h-20 w-20 lg:h-40 lg:w-40 opacity-90 object-cover mr-4 rounded"
           src={img}
@@ -18,12 +18,12 @@ const Article = ({ img, tittle, txt, url }) => {
           <p className="dark:text-slate-400 text-gray-700">
             {txt}
           </p>
-          <p className="dark:text-slate-400 text-indigo-700">
+          <p className="dark:text-slate-400 text-indigo-700 hover:underline">
             <Link to={url}>Подробнее...</Link>
           </p>
 
         </div>
-      </card>
+      </div>
     </div>
   )
 }

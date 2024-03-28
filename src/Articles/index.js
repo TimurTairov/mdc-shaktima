@@ -2,6 +2,13 @@
 
 export const allArcles = [
   {
+    "id": "003",
+    "tittle": "Календарь событий 2024",
+    "description": "Список событий и ведических праздников на 2024 год ...",
+    "img-url": "https://sun9-63.userapi.com/impg/SJMTFSUoJtNuAQ0g8n_YdZii_wtC14uZRTPltg/vNUYeiGjhLU.jpg?size=320x320&quality=96&sign=48665e9d88fbfacc097c8aad66ec7230&type=album",
+    "url": '/eventlist2024',
+  },
+  {
     "id": "002",
     "tittle": "Махашиваратри 2024",
     "description": "Махашиваратри в этом году удался на славу Махадэву в прекрасном зале Энергия Баланса.  У нас было четыре пуджи, динамическая медитация, танцы, йога, чай, ханг, общение и прасад. На праздник пришло около 50 практикующих ...",

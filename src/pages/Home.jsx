@@ -30,40 +30,13 @@ const Home = () => {
         </section>
 
         <main className="lg:flex">
-          {/* post cards  */}
+          {/* news  */}
           <div className="min-[320px]:px-2 lg:px-0 w-full lg:w-2/3 lg:space-x-2">
             <h5 className="dark:text-white font-bold text-lg uppercase text-gray-700 mt-1 lg:ml-2">Новости Московской сангхи</h5>
 
-            {/* <div className="block w-full lg:flex lg:mb-10 mt-4">
-              <img src={mahalakshmiJayanti} alt="Mahalakshmi Jayanti" className="h-40 w-40 opacity-90 object-cover lg:mr-4 p-0 rounded" />
-              <div className="flex flex-col w-full h-40">
-                <h3 className="dark:text-white  text-gray-700 font-bold text-2xl">Махалакшми Джаянти | Аяпа Джаянти | Холи</h3>
-                <p className="dark:text-slate-400 text-gray-700">
-                  Намасте, Драгоценные 🙏
-                  <br />
-                  В ближайший понедельник 25 марта нас ждет тройной праздник!
-                  <br />
-                  МАХАЛАКШМИ ДЖАЯНТИ, АЙЯПА ДЖАЯНТИ, ХОЛИ
-                  <br />
-                  Некоторое время в феврале назад мы почтили Ма Сарасвати - ее день явления считается первым шагом весны
-                  <br />
-                  Теперь мы отмечаем расцвет Шакти, возрождение, полную Весну с приходом Лакшми Ма <br />
-                  Мы приглашаем вас <br />
-                  📍25 марта <br />
-                  📍18:00 <br />
-                  📍Центр «Вершина» (м Курская/Чистые пруды) <br />
-                  Приносите цветы, фрукты , дойнет и преданное сердце 🩷
-                  <br /> Так же приглаем матадж на служение по подготовке праздника - обращайтесь к Мадхувидье в вотсап 89859274240🙏 <br />
-                  Джей Ма💖
-                </p>
-              </div>
-            </div> */}
-
             <section className="py-2 pr-2">
               {news.map((post) => {
-                if (post.id === '006') {
-                  return <Column key={post.id} img={post.image} tittle={post.tittle} txt={post.description} />
-                } else return <></>
+                return <Column key={post.id} img={post.image} tittle={post.tittle} txt={post.description} url={post.url} />
               })}
             </section>
           </div>
@@ -74,15 +47,21 @@ const Home = () => {
               <h5 className="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">Популярные статьи</h5>
               <ul>
                 <li className="dark:border-transparent dark:hover:border-gray-200 px-1 py-1 border-y border-white hover:border-gray-200 transition-all duration-300">
-                  <NavLink to="/neoadwayta" className="dark:text-slate-400 flex items-center text-indigo-600">
+                  <NavLink to="/eventlist2024" className="dark:text-slate-400 flex items-center text-indigo-600 hover:underline">
                     <img src={logo} alt="logo" className="mr-2 rounded h-4 w-4" />
-                    Как не попасть в ловушку поверхностной Адвайты
+                    Календарь событий 2024
                   </NavLink>
                 </li>
                 <li className="dark:border-transparent dark:hover:border-gray-200 px-1 py-1 border-y border-white hover:border-gray-200 transition-all duration-300">
-                  <NavLink to="/mahashivaratri2024" className="dark:text-slate-400 flex items-center text-indigo-600">
+                  <NavLink to="/mahashivaratri2024" className="dark:text-slate-400 flex items-center text-indigo-600 hover:underline">
                     <img src={logo} alt="logo" className="mr-2 rounded h-4 w-4" />
-                    МахаШиваратри 2024
+                    МахаШиваРатри 2024
+                  </NavLink>
+                </li>
+                <li className="dark:border-transparent dark:hover:border-gray-200 px-1 py-1 border-y border-white hover:border-gray-200 transition-all duration-300">
+                  <NavLink to="/neoadwayta" className="dark:text-slate-400 flex items-center text-indigo-600 hover:underline">
+                    <img src={logo} alt="logo" className="mr-2 rounded h-4 w-4" />
+                    Как не попасть в ловушку поверхностной Адвайты
                   </NavLink>
                 </li>
               </ul>
@@ -93,7 +72,7 @@ const Home = () => {
               <div className="border border-dotted border-red-700 dark:border-white md:hidden lg:block"></div>
 
               {/* subscribe */}
-              <div className="my-5 md:my-0 lg:my-5">
+              {/* <div className="my-5 md:my-0 lg:my-5">
                 <h5 className="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">Subscribe</h5>
                 <p className="dark:text-slate-400 text-gray-600 mb-4">Subscribe to our newsletter</p>
                 <input
@@ -102,10 +81,10 @@ const Home = () => {
                   className="text-gray-700 bg-gray-100 w-full border rounded hover:border-gray-600 transition-all duration-300"
                 />
                 <button className="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-300">Subscribe</button>
-              </div>
+              </div> */}
 
               {/* divider */}
-              <div className="border border-dotted  border-red-700 dark:border-white md:hidden lg:block"></div>
+              {/* <div className="border border-dotted  border-red-700 dark:border-white md:hidden lg:block"></div> */}
             </div>
           </div>
         </main>
