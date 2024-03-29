@@ -27,7 +27,7 @@ export const pudjari = [
     "id": "001",
     "name": "Дэванатха",
     "foto": 'https://sun9-80.userapi.com/impg/DyUczFAX85RP1Izv-e2QfoSX9JzNoN28SodFUQ/LOyW_XI87YA.jpg?size=1440x2160&quality=95&sign=353b8fe62d05a20ae08f3dbd532692de&type=album',
-    "description": "Пуджари. В традиции с 1998 г.",
+    "description": "Пуджари. В традиции с 1998 г. Руководитель дхарма центра ШактиМА.",
 
   },
   {
