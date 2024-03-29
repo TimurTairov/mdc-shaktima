@@ -5,7 +5,7 @@ const MahaShivaRatri2024 = () => {
   return (
     <div className="max-w-screen-xl mx-auto mt-4">
       <div className="mx-2">
-        <h3 className="dark:text-white  text-gray-700 font-bold text-2xl">Махашиваратри 2024</h3>
+        <h3 className="dark:text-white text-gray-700 font-bold text-2xl">Махашиваратри 2024</h3>
         <div className="dark:text-slate-400 text-gray-700">
           <p>Махашиваратри в этом году удался на славу Махадэву в прекрасном зале "Энергия Баланса".</p>
           <p>
