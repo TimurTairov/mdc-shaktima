@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+//! блог
 const Article = ({ img, tittle, txt, url }) => {
   return (
     <div>

@@ -13,7 +13,7 @@ const Donate = () => {
           width="330"
           height="50"
           frameBorder="0"
-          allowTransparency="true"
+          allowtransparency="true"
           scrolling="no"
         />
         <iframe
@@ -22,7 +22,7 @@ const Donate = () => {
           width="330"
           height="50"
           frameBorder="0"
-          allowTransparency="true"
+          allowtransparency="true"
           scrolling="no"
         />
 
@@ -32,7 +32,7 @@ const Donate = () => {
           width="330"
           height="50"
           frameBorder="0"
-          allowTransparency="true"
+          allowtransparency="true"
           scrolling="no"
         />
       </div>
