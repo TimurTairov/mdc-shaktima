@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const NavLinks = () => {
   return (
     <>
-      <NavLink className="header-link" to="/">
+      <NavLink className="header-link" to="." end>
         Новости
       </NavLink>
       <NavLink className="header-link" to="/blog">
