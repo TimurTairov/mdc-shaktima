@@ -5,7 +5,7 @@ import site from '../images/icons/icons8-site-96.png'
 import om from '../images/om_big.png'
 import whapsup from '../images/gif/icons8-whatsapp 2.gif'
 
-const Contscts = () => {
+const Contacts = () => {
   return (
     <div className="max-w-screen-xl mx-auto mt-4 h-screen ">
       <div className="ml-2">
@@ -13,7 +13,22 @@ const Contscts = () => {
 
         <div className="flex">
           <img src={whapsup} className="w-6 h-6 mr-2" alt="whapsup" />
-          <h5 className="dark:text-slate-400 text-gray-700">Мадхувидья: +79859274240 </h5>
+          <h5 className="dark:text-slate-400 text-gray-700">
+            Мадхувидья:
+            <a href="whatsapp://send?phone=+79859274240" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-indigo-700 hover:underline ml-2">
+              +79859274240
+            </a>
+          </h5>
+        </div>
+
+        <div className="flex">
+          <img src={whapsup} className="w-6 h-6 mr-2" alt="whapsup" />
+          <h5 className="dark:text-slate-400 text-gray-700">
+            Тиртхадева:
+            <a href="whatsapp://send?phone=+79672067710" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-indigo-700 hover:underline ml-2">
+              +79672067710
+            </a>
+          </h5>
         </div>
 
         {/* <p className="dark:text-slate-400 text-gray-700">Дэванатха: +79055623388 </p> */}
@@ -49,4 +64,4 @@ const Contscts = () => {
   )
 }
 
-export default Contscts
+export default Contacts
