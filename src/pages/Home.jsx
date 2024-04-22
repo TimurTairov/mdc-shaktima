@@ -36,7 +36,7 @@ const Home = () => {
 
             <section className="py-2 pr-2">
               {news.map((post) => {
-                return <Column key={post.id} img={post.image} title={post.title} txt={post.description} url={post.url} />
+                return <Column key={post.id} img={post.image} title={post.title} txt={post.description} url={post.url} url_info={post.url_info} />
               })}
             </section>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 //! Новости
-const Column = ({ img, title, txt, url }) => {
+const Column = ({ img, title, txt, url, url_info }) => {
 
   return (
 
@@ -22,7 +22,10 @@ const Column = ({ img, title, txt, url }) => {
           {txt}
         </p>
         <p className="dark:text-slate-400 text-indigo-600 hover:underline">
-          {url ? <a href='https://telegra.ph/Priglashaem-na-tradicionnye-ritrity-v-SHri-Datta-ashram-03-27' >Ссылка на доп. материал</a> : ''}
+          {url ?
+            <a href={url} target="_blank" rel="noreferrer">
+              {url_info}
+            </a> : ''}
         </p>
 
       </div>
