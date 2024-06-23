@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import mahashivaratri from '../images/mahashivaratri.jpg'
 import { news } from '../data/News'
 import logo from '../images/ShaktiMa-logo.jpg'
 import Column from '../components/Column'
@@ -11,19 +10,22 @@ const Home = () => {
       <div className="max-w-screen-xl mx-auto mt-4">
         {/* banners */}
         <section className="px-2 lg:flex lg:space-x-2">
-          <NavLink
-            to="/mahashivaratri2024"
-            className="w-full lg:w-2/3 h-96 mb-4 relative rounded inline-block overflow-hidden bg-gradient-to-r from-red-500 to-red-700"
-          >
-            <div className="absolute left-0 top-0 w-full h-full z-0 bg-gradient-to-b from-black/5 to-black/20"></div>
-            <img className="absolute left-0 top-0 w-full h-full z-0 object-cover" src={mahashivaratri} alt="MahaShivaRatri 2024" />
+          <NavLink to="/" className="w-full lg:w-2/3 h-96 mb-4 relative rounded inline-block overflow-hidden bg-gradient-to-r from-red-500 to-red-700">
+            <div className="absolute left-0 top-0 w-full h-full z-0 bg-gradient-to-b from-black/10 to-black/80"></div>
+
+            <img
+              className="absolute left-0 top-0 w-full h-full z-0 object-contain"
+              src="https://sun9-53.userapi.com/impg/HbOouWkPke2xMcbvOLqydh1j5on_JSevFOsHRw/vQs0ZFhU9Yk.jpg?size=1024x576&quality=95&sign=3d4562ceaa64fa6e6e51f7e82e15f765&type=album"
+              alt="MahaShivaRatri 2024"
+            />
+
             <div className="p-4 absolute bottom-0 left-0">
-              <h2 className="text-2xl font-semibold text-gray-100 leading-tight">МахаШиваРатри 2024</h2>
+              <h2 className="text-2xl font-semibold text-red-500 leading-tight">Московский Дхарма центр ШактиМа</h2>
             </div>
           </NavLink>
 
           <NavLink className="w-full lg:w-1/3 bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden">
-            <div className="absolute left-0 top-0 w-full h-full z-0 bg-gradient-to-b from-black/5 to-black/20"></div>
+            <div className="absolute left-0 top-0 w-full h-full z-0 bg-gradient-to-b from-black/10 to-black/80"></div>
             <img className="absolute left-0 top-0 w-full h-full z-0 object-cover" src={logo} alt="logotip ShaktiMa" />
             <div className="p-4 absolute bottom-0 left-0 z-0">{/* <h2 className="text-2xl font-semibold text-gray-100 leading-tight">МДЦ ШактиМа</h2> */}</div>
           </NavLink>

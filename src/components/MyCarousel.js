@@ -2,45 +2,20 @@ import React from 'react'
 import { useState } from "react"
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import img1 from '../images/MahaShivaRatri2024/img1.jpg'
-import img2 from '../images/MahaShivaRatri2024/img2.jpg'
-import img3 from '../images/MahaShivaRatri2024/img3.jpg'
-import img4 from '../images/MahaShivaRatri2024/img4.jpg'
-import img5 from '../images/MahaShivaRatri2024/img5.jpg'
 
-const MyCarousel = () => {
 
-  const slides = [img1, img2, img3, img4, img5]
-
-  const slides2 = [
-    {
-      url: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80',
-    },
-
-    {
-      url: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80',
-    },
-  ]
+const MyCarousel = (props) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? props.slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
+    const isLastSlide = currentIndex === props.slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -52,7 +27,7 @@ const MyCarousel = () => {
   return (
     <div className='max-w-[1400px] h-[780px] w-full pb-16 relative group'>
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex]})` }}
+        style={{ backgroundImage: `url(${props.slides[currentIndex]})` }}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
       ></div>
       {/* Left Arrow */}
@@ -65,7 +40,7 @@ const MyCarousel = () => {
       </div>
 
       <div className='flex top-4 justify-center py-2'>
-        {slides.map((slide, slideIndex) => (
+        {props.slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}

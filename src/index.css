@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: 'Montserrat';
+}
+
+/* {
+  font-family: 'DM Sans', sans-serif;
+} */
+
 p {
   @apply mb-2 mt-2;
 }

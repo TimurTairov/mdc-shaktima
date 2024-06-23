@@ -1,7 +1,13 @@
 import React from 'react'
 import MyCarousel from '../components/MyCarousel'
+import img1 from '../images/MahaShivaRatri2024/img1.jpg'
+import img2 from '../images/MahaShivaRatri2024/img2.jpg'
+import img3 from '../images/MahaShivaRatri2024/img3.jpg'
+import img4 from '../images/MahaShivaRatri2024/img4.jpg'
+import img5 from '../images/MahaShivaRatri2024/img5.jpg'
 
 const MahaShivaRatri2024 = () => {
+  const slides = [img1, img2, img3, img4, img5]
   return (
     <div className="max-w-screen-xl mx-auto mt-4">
       <div className="mx-2">
@@ -32,7 +38,7 @@ const MahaShivaRatri2024 = () => {
 
         <div className="mt-20">
           <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Фото с Махашиваратри</h5>
-          <MyCarousel />
+          <MyCarousel slides={slides} />
         </div>
       </div>
     </div>
