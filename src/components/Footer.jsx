@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import youtube from '../images/icons/youtube.png'
-import tg from '../images/icons/tg.png'
+import { FaYoutube } from 'react-icons/fa'
+import { FaTelegram } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -51,12 +51,12 @@ const Footer = () => {
           <ul className="flex">
             <li className="mr-2">
               <a href="https://www.youtube.com/@ShaktiMA_MDC" target="_blank" rel="noreferrer">
-                <img src={youtube} className="w-6 h-6 mr-2" alt="youtube" />
+                <FaYoutube className="w-6 h-6 mr-2 text-slate-400" />
               </a>
             </li>
             <li className="mr-2">
               <a href="https://t.me/mdc_ShaktiMa" target="_blank" rel="noreferrer">
-                <img src={tg} className="w-6 h-6 mr-2" alt="tg" />
+                <FaTelegram className="w-6 h-6 mr-2 text-slate-400" />
               </a>
             </li>
           </ul>
