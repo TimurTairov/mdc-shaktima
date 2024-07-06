@@ -8,16 +8,19 @@ const NavLinks = () => {
       <NavLink className="header-link text-sm lg:text-lg" to="." end>
         Новости
       </NavLink>
-      <NavLink className="header-link text-sm lg:text-lg" to="/blog">
+      <NavLink className="header-link text-sm lg:text-lg" to="blog">
         Блог
       </NavLink>
-      <NavLink className="header-link text-sm lg:text-lg" to="/aboutus">
+      <NavLink className="header-link text-sm lg:text-lg" to="gallary">
+        Галлерея
+      </NavLink>
+      <NavLink className="header-link text-sm lg:text-lg" to="aboutus">
         О нас
       </NavLink>
-      <NavLink className="header-link text-sm lg:text-lg" to="/contacts">
+      <NavLink className="header-link text-sm lg:text-lg" to="contacts">
         Контакты
       </NavLink>
-      <NavLink className="header-link text-sm lg:text-lg" to="/donate">
+      <NavLink className="header-link text-sm lg:text-lg" to="donate">
         Пожертвовать
       </NavLink>
     </>

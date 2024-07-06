@@ -11,7 +11,7 @@ const Home = () => {
     showBullets: false,
     showIndex: false,
     slideDuration: 2000,
-    showFullscreenButton: true,
+    showFullscreenButton: false,
     showNav: false,
     showPlayButton: false,
     autoPlay: true,

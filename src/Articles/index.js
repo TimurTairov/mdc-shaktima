@@ -1,4 +1,4 @@
-export const allArcles = [
+export const allArticles = [
   {
     "id": "003",
     "tittle": "Календарь событий 2024",

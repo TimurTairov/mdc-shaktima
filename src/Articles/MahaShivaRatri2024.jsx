@@ -1,14 +1,5 @@
-import ImageGallery from 'react-image-gallery'
-import { mshr_photos_1, mshr_photos_2 } from '../data/photos'
-
+import { Link } from 'react-router-dom'
 const MahaShivaRatri2024 = () => {
-  const settings = {
-    showBullets: true,
-    showIndex: true,
-    slideDuration: 1000,
-    showFullscreenButton: true,
-  }
-
   return (
     <div className="max-w-screen-xl mx-auto mt-4">
       <div className="mx-2">
@@ -23,7 +14,6 @@ const MahaShivaRatri2024 = () => {
           <p>Ом Намах Шивая</p>
           <p>Хара Хара Махадева</p>
         </div>
-
         <div className="mt-10">
           <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Видео с Махашиваратри</h5>
           <iframe
@@ -36,15 +26,9 @@ const MahaShivaRatri2024 = () => {
             className="w-full h-[500px] max-[400px]:h-72 lg:ml-2 mt-2 lg:pr-4 "
           />
         </div>
-
-        <div className="mt-10 mb-10">
-          <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Фото с Махашиваратри 2024. Часть 1.</h5>
-          <ImageGallery items={mshr_photos_1} {...settings} />
-        </div>
-        <div className="mt-10 mb-10">
-          <h5 className="dark:text-white font-semibold text-lg  text-gray-700 lg:ml-2 mb-2">Фото с Махашиваратри 2024. Часть 2.</h5>
-          <ImageGallery items={mshr_photos_2} {...settings} />
-        </div>
+        <p className="dark:text-slate-400 text-indigo-700 hover:underline mt-10 mb-5">
+          <Link to="/mahashivaratriphoto2024">Фотографии с Махашиваратри 2024</Link>
+        </p>
       </div>
     </div>
   )
