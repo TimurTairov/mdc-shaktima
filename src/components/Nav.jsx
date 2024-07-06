@@ -5,19 +5,19 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const NavLinks = () => {
   return (
     <>
-      <NavLink className="header-link" to="." end>
+      <NavLink className="header-link text-sm lg:text-lg" to="." end>
         Новости
       </NavLink>
-      <NavLink className="header-link" to="/blog">
+      <NavLink className="header-link text-sm lg:text-lg" to="/blog">
         Блог
       </NavLink>
-      <NavLink className="header-link" to="/aboutus">
+      <NavLink className="header-link text-sm lg:text-lg" to="/aboutus">
         О нас
       </NavLink>
-      <NavLink className="header-link" to="/contacts">
+      <NavLink className="header-link text-sm lg:text-lg" to="/contacts">
         Контакты
       </NavLink>
-      <NavLink className="header-link" to="/donate">
+      <NavLink className="header-link text-sm lg:text-lg" to="/donate">
         Пожертвовать
       </NavLink>
     </>

@@ -5,7 +5,7 @@ const Column = ({ img, title, txt, url, url_info }) => {
 
   return (
 
-    <div className="block w-full lg:flex mb-10 h-auto" >
+    <div className="block lg:w-11/12 lg:flex mb-10 h-auto rounded border border-slate-200" >
 
       <img
         className="h-40 w-auto opacity-90 object-cover lg:mr-4 p-0 rounded"
