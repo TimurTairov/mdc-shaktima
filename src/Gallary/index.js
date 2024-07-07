@@ -21,14 +21,14 @@ export const allGallaries = [
     "url": '/dattajayantiphoto2023',
   },
   {
-    "id": "003",
+    "id": "004",
     "tittle": "Фотографии с Паамбатиджаянти 2023",
     "description": "14 фотографий",
     "img-url": "https://sun9-21.userapi.com/impg/RfmWlXZox3osgjBeUTY4a_x99MM3hUUpeLdhHQ/iv0YDOEXl2U.jpg?size=1080x1080&quality=95&sign=71a9a3a4083a90cbcf46cb6620d9afec&type=album",
     "url": '/paambatijayantiphoto2023',
   },
   {
-    "id": "003",
+    "id": "005",
     "tittle": "Фотографии с МахаШиваРатри 2023",
     "description": "Более 100 фотографий",
     "img-url": "https://sun9-61.userapi.com/impg/KXPUJ90xdv-xwLMY5TqB0uiSDGIA9waZ1e8-5g/JkOrFH9cFfw.jpg?size=2500x2500&quality=95&sign=65f145b6c073057bd755fd4c2ea5aadf&type=album",
