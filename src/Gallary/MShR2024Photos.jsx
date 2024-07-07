@@ -6,7 +6,9 @@ const MShR2024Photos = () => {
     showBullets: true,
     showIndex: true,
     slideDuration: 1000,
+    slideInterval: 3000,
     showFullscreenButton: true,
+    lazyLoad: true,
   }
   return (
     <div className="max-w-screen-xl mx-auto mt-4">

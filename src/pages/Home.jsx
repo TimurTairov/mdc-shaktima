@@ -10,7 +10,8 @@ const Home = () => {
   const settings = {
     showBullets: false,
     showIndex: false,
-    slideDuration: 2000,
+    slideDuration: 2500,
+    slideInterval: 5000,
     showFullscreenButton: false,
     showNav: false,
     showPlayButton: false,

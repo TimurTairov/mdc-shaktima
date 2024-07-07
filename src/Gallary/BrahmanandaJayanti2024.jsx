@@ -1,7 +1,7 @@
 import ImageGallery from 'react-image-gallery'
-import { mshr_photos_2923 } from '../data/photos'
+import { brahmanandaJayanti2024 } from '../data/photos2'
 
-const MShR2023Photos = () => {
+const BrahmanandaJayanti2024 = () => {
   const settings = {
     showBullets: true,
     showIndex: true,
@@ -13,14 +13,14 @@ const MShR2023Photos = () => {
   return (
     <div className="max-w-screen-xl mx-auto mt-4">
       <div className="mx-2">
-        <h1 className="text-2xl ml-2">Фотографии с Махашиваратри 2023</h1>
+        <h1 className="text-2xl ml-2">Фотографии со дня явления Брахмананды 2023</h1>
 
         <div className="mt-10 mb-10">
-          <ImageGallery items={mshr_photos_2923} {...settings} />
+          <ImageGallery items={brahmanandaJayanti2024} {...settings} />
         </div>
       </div>
     </div>
   )
 }
 
-export default MShR2023Photos
+export default BrahmanandaJayanti2024

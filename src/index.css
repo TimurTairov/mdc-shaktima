@@ -33,11 +33,19 @@ p {
     background: red;
     border: 1px solid red;
   }
+  .image-gallery-thumbnail:hover {
+    border: 2px solid red;
+  }
 }
 
 .image-gallery-bullet:hover {
   background: red;
   border: 1px solid red;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border: 3px solid red;
 }
 
 /* .header-btn {

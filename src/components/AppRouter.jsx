@@ -13,6 +13,9 @@ import MainLayout from '../layouts/MainLayout'
 import Gallery from '../pages/Gallery'
 import MShR2024Photos from '../Gallary/MShR2024Photos'
 import MShR2023Photos from '../Gallary/MShR2023Photos'
+import BrahmanandaJayanti2024 from '../Gallary/BrahmanandaJayanti2024'
+import DattaJayanti2023 from '../Gallary/DattaJayanti2023'
+import PaambatiJayanti2023 from '../Gallary/PaambatiJayanti2023'
 
 const AppRouter = () => {
   return (
@@ -31,6 +34,9 @@ const AppRouter = () => {
           <Route path="gallary" element={<Gallery />} />
           <Route path="mahashivaratriphoto2024" element={<MShR2024Photos />} />
           <Route path="mahashivaratriphoto2023" element={<MShR2023Photos />} />
+          <Route path="brahmanandajayantiphoto2024" element={<BrahmanandaJayanti2024 />} />
+          <Route path="dattajayantiphoto2023" element={<DattaJayanti2023 />} />
+          <Route path="paambatijayantiphoto2023" element={<PaambatiJayanti2023 />} />
         </Route>
       </Routes>
     </Router>

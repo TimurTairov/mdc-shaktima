@@ -7,8 +7,8 @@ const Column = ({ img, title, txt, url, url_info }) => {
       <img className="w-full h-auto lg:h-40 lg:w-auto opacity-90 object-cover lg:mr-4 p-0 rounded" src={img} alt={title} />
 
       <div className="flex flex-col w-full ">
-        <h3 className="dark:text-white  text-gray-700 font-bold text-lg lg:text-2xl">{title}</h3>
-        <p className="dark:text-slate-400 text-gray-700">
+        <h3 className="dark:text-white  text-gray-500 font-semibold text-lg lg:text-2xl p-1">{title}</h3>
+        <p className="dark:text-slate-400 text-gray-500 p-1">
           {txt}
           <br />
           <span className="dark:text-slate-400 text-indigo-600 hover:underline">
