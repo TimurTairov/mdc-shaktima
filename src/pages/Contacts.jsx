@@ -4,6 +4,7 @@ import tg from '../images/icons/tg.png'
 //import site from '../images/icons/icons8-site-96.png'
 import om from '../images/om_big.png'
 import whapsup from '../images/gif/icons8-whatsapp 2.gif'
+import shop from '../images/icons/shopping-cart.png'
 
 const Contacts = () => {
   return (
@@ -56,6 +57,12 @@ const Contacts = () => {
             <a href="https://institute-vasishtha.com/" className="flex" target="_blank" rel="noreferrer">
               <img src="https://institute-vasishtha.com/local/include/template/png/screen-1-img.png" className="w-7 h-7 mr-2" alt="institute-vasishtha.com" />
               Институт Риши Васиштхи. Прохождение обучения по курсам.
+            </a>
+          </li>
+          <li className="text-gray-700 hover:text-indigo-700 hover:underline my-2">
+            <a href="https://www.siddhashop.com/" className="flex" target="_blank" rel="noreferrer">
+              <img src={shop} className="w-7 h-7 mr-2" alt="institute-vasishtha.com" />
+              Сиддха шоп. Наш официальный интернет магазин.
             </a>
           </li>
         </ul>
